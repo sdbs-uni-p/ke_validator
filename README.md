@@ -49,5 +49,4 @@ $ perl runScript.pl [schema_file_path] [instance_file_path] [output_type]
 ### Change parameters
 Output formats can be passed as third argument while running the perl script<br>
 Available types :<br>
-strict_basic can only be used with specification_version = draft2019-09<br>
-output_format = flag, basic, strict_basic, detailed, verbose, terse
+flag, basic, detailed, verbose, terse<br>
