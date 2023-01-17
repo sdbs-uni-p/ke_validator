@@ -18,11 +18,11 @@ Gives you bash control to enter commands
 
 ### Sample commands
 
-Swtich to working directory where code is /usr/src/JSON-Schema-Modern
+Switch to working directory where code is /usr/src/JSON-Schema-Modern
 
 to run test cases
 
 ```
-$ perl t/filename.t
+$ perl t/[file_name].t
 ```
 

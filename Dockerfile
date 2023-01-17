@@ -1,17 +1,13 @@
-#FROM ubuntu:latest
+#Docker container for a simple perl setup
+#Copyright 2022, Stefanie Scherzinger <stefanie.scherzinger@uni-passau.de>
+#Copyright 2022, Sajal Jain <sajal.jain@uni-passau.de>
+#SPDX-License-Identifier: MIT-0
 
 FROM perl:5.34
 
 WORKDIR /usr/src/
 RUN git clone https://github.com/karenetheridge/JSON-Schema-Modern.git
 
-#steps to set up linux environment
-#RUN perl -v
-#RUN chmod 1777 /tmp
-#RUN apt clean && \
-#	apt-get update -y && \
-#	apt-get install -y cpanminus
-#RUN cpan App::cpanminus
-
+#cpanm is tool to install perl projects from cpan repository
 RUN cpanm JSON::Schema::Modern
 RUN perldoc JSON::Schema::Modern
