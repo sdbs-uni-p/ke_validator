@@ -10,4 +10,7 @@ RUN git clone https://github.com/karenetheridge/JSON-Schema-Modern.git
 
 #cpanm is tool to install perl projects from cpan repository
 RUN cpanm JSON::Schema::Modern
+RUN cpanm JSON::Parse
 RUN perldoc JSON::Schema::Modern
+
+COPY runScript.pl /usr/src
