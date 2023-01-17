@@ -2,7 +2,6 @@ A Dockerfile for running KE Validator<br><br>
 ## How to run ?
 
 The project launch is in two parts: build and start.<br>
-Make image again as perl script is moved to docker container
 
 Library documentation to read json in perl<br>
 https://metacpan.org/dist/JSON-Parse/view/lib/JSON/Parse.pod
@@ -31,11 +30,10 @@ $ perl t/[file_name].t
 ```
 
 ### Run with custom files
-Make changes to files instance.json and schema.json<br>
-Move files with name instance.json and schema.json to /usr/src
+Move your instance and schema json files to /usr/src
 
 ```
-$ docker cp [c:\path\to\local\file] container_name:/path/to/target/dir/
+$ docker cp [c:\path\to\local\file] container_name:/usr/src
 ```
 
 To check container_name
@@ -45,11 +43,11 @@ $ docker ps
 
 change working directory to /usr/src, run the following script
 ```
-$ perl runScript.pl
+$ perl runScript.pl [schema_file_path] [instance_file_path] [output_type]
 ```
 
 ### Change parameters
-changing output formats in runScript.pl<br>
+Output formats can be passed as third argument while running the perl script<br>
 Available types :<br>
 strict_basic can only be used with specification_version = draft2019-09<br>
 output_format = flag, basic, strict_basic, detailed, verbose, terse
