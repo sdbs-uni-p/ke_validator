@@ -32,6 +32,7 @@ $ perl t/[file_name].t
 
 ### Run with custom files
 Make changes to files instance.json and schema.json
+
 Move files with name instance.json and schema.json to /usr/src
 
 ```
@@ -49,7 +50,7 @@ $ perl runScript.pl
 ```
 
 ###Change parameters
-changing output formats in runScript.pl
-Available types : 
+changing output formats in runScript.pl\n
+Available types :\n
 strict_basic can only be used with specification_version = draft2019-09
 output_format = flag, basic, strict_basic, detailed, verbose, terse
