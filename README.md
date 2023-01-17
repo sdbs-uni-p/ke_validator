@@ -1,3 +1,4 @@
+A Dockerfile for running KE Validator<br><br>
 ## How to run ?
 
 The project launch is in two parts: build and start.<br>
