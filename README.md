@@ -38,7 +38,18 @@ Move files with name instance.json and schema.json to /usr/src
 $ docker cp [c:\path\to\local\file] container_name:/path/to/target/dir/
 ```
 
+To check container_name
+```
+$ docker ps
+```
+
 change working directory to /usr/src, run the following script
 ```
 $ perl runScript.pl
 ```
+
+###Change parameters
+changing output formats in runScript.pl
+Available types : 
+strict_basic can only be used with specification_version = draft2019-09
+output_format = flag, basic, strict_basic, detailed, verbose, terse
