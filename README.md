@@ -3,6 +3,9 @@
 The project launch is in two parts: build and start.
 Make image again as perl script is moved to docker container
 
+Library documentation to read json in perl
+https://metacpan.org/dist/JSON-Parse/view/lib/JSON/Parse.pod
+
 ### Build
 
 ```
