@@ -44,6 +44,6 @@ $ perl runScript.pl [schema_file_path] [instance_file_path] [output_type]
 ```
 
 ### Change parameters
-The [output_type] argument is optional. By default it is set to 'flag'. But if you want to change output formats, it can be passed as third argument while running the perl script<br>
+The <TT>[output_type]</TT> argument is optional. By default it is set to 'flag'. But if you want to change output formats, it can be passed as third argument while running the perl script<br>
 Available types :<br>
 <TT>flag, basic, detailed, verbose, terse</TT><br>
