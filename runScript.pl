@@ -22,7 +22,7 @@ my $schema_data = read_json ($schema_path);
 
 $result = $js->evaluate($instance_data, $schema_data);
 
-print "$result";
+print "$result"."\n";
 
 
 

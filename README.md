@@ -1,10 +1,7 @@
-A Dockerfile for running KE Validator<br><br>
+A Dockerfile for running <a href="https://github.com/karenetheridge/JSON-Schema-Modern">KE</a> Validator.<br><br>
 ## How to run ?
 
-The project launch is in two parts: build and start.<br>
-
-Library documentation to read json in perl<br>
-https://metacpan.org/dist/JSON-Parse/view/lib/JSON/Parse.pod
+The project launch is in two parts: build and launch.<br>
 
 ### Build
 
@@ -18,7 +15,7 @@ $ docker build -t [image_name] .
 $ docker run -it [image_name] bash
 ```
 
-Gives you bash control to enter commands
+Gives you bash control to enter commands.
 
 ### Sample commands
 
@@ -33,7 +30,7 @@ $ perl t/[file_name].t
 Move your instance and schema json files to /usr/src
 
 ```
-$ docker cp [c:\path\to\local\file] container_name:/usr/src
+$ docker cp [path_of_file_from_system] container_name:/usr/src
 ```
 
 To check container_name
@@ -47,6 +44,6 @@ $ perl runScript.pl [schema_file_path] [instance_file_path] [output_type]
 ```
 
 ### Change parameters
-Output formats can be passed as third argument while running the perl script<br>
+The [output_type] argument is optional. By default it is set to 'flag'. But if you want to change output formats, it can be passed as third argument while running the perl script<br>
 Available types :<br>
-flag, basic, detailed, verbose, terse<br>
+<span style="font-family: 'typewriter';">flag, basic, detailed, verbose, terse</span><br>
