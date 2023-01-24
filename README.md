@@ -45,7 +45,7 @@ $ perl runScript.pl [schema_file_path] [instance_file_path] [output_type]
 ```
 
 ### Change parameters
-If you want to change output formats, it can be passed as third argument while running the perl script<br>
+If you want to change output format, it can be passed as third argument while running the perl script<br>
 Use of each output formats can be found <a href="https://metacpan.org/pod/JSON::Schema::Modern::Result#output_format">here</a>.
 Available types :<br>
 <TT>flag, basic, detailed, verbose, terse</TT><br>
