@@ -24,7 +24,7 @@ $js = JSON::Schema::Modern->new(
 my $instance_data = read_json ($instance_path);
 my $schema_data = read_json ($schema_path);
 
-$result = $js->evaluate($instance_data, $schema_data);
+my $result = $js->evaluate($instance_data, $schema_data)->dump;
 
 print "$result"."\n";
 
