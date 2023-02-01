@@ -1,4 +1,4 @@
-A Dockerfile for running <a href="https://github.com/karenetheridge/JSON-Schema-Modern">KE</a> Validator.<br><br>
+A Dockerfile providing the setup for running the JSON Schema validator <a href="https://github.com/karenetheridge/JSON-Schema-Modern">KE</a>.<br><br>
 ## How to run ?
 
 The project launch is in two parts: build and launch.<br>
