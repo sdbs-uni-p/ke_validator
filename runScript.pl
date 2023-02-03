@@ -1,5 +1,6 @@
-use JSON::Parse 'read_json';
 use JSON::Schema::Modern;
+use Cpanel::JSON::XS;
+use Path::Tiny;
 
 $number_args = $#ARGV + 1;  
 if ($number_args < 2) {  
@@ -21,8 +22,8 @@ $js = JSON::Schema::Modern->new(
   output_format => $output
 );
 
-my $instance_data = read_json ($instance_path);
-my $schema_data = read_json ($schema_path);
+my $instance_data = decode_json(path($instance_path)->slurp_raw);
+my $schema_data = decode_json(path($schema_path)->slurp_raw);
 
 my $result = $js->evaluate($instance_data, $schema_data)->dump;
 
